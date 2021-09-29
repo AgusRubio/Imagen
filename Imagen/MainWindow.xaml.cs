@@ -12,42 +12,44 @@ namespace Imagen
         public MainWindow()
         {
             InitializeComponent();
+            OpacidadAlta.IsChecked = true;
+            AjusteRelleno.IsChecked = true;
         }
 
 
         private void OpacidadAlta_Checked(object sender, RoutedEventArgs e)
         {
-            imagen.Opacity = 1;
+            TheMandalorianImagen.Opacity = 1;
         }
 
         private void OpacidadMedia_Checked(object sender, RoutedEventArgs e)
         {
-            imagen.Opacity = 0.5;
+            TheMandalorianImagen.Opacity = 0.6;
         }
 
         private void OpacidadBaja_Checked(object sender, RoutedEventArgs e)
         {
-            imagen.Opacity = 0.25;
+            TheMandalorianImagen.Opacity = 0.3;
         }
 
         private void Relleno_Checked(object sender, RoutedEventArgs e)
         {
-            imagen.Stretch = Stretch.Fill;
+            TheMandalorianImagen.Stretch = Stretch.Fill;
         }
 
         private void Uniforme_Checked(object sender, RoutedEventArgs e)
         {
-            imagen.Stretch = Stretch.Uniform;
+            TheMandalorianImagen.Stretch = Stretch.Uniform;
         }
 
         private void RellenoUniforme_Cheked(object sender, RoutedEventArgs e)
         {
-            imagen.Stretch = Stretch.UniformToFill;
+            TheMandalorianImagen.Stretch = Stretch.UniformToFill;
         }
 
         private void SinAjuste_Checked(object sender, RoutedEventArgs e)
         {
-            imagen.Stretch = Stretch.None;
+            TheMandalorianImagen.Stretch = Stretch.None;
         }
     }
 }
